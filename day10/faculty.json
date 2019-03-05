@@ -1,0 +1,40 @@
+[{
+	"first_name": "deepak",
+	"last_name": "verma",
+	"sex": "male",
+	"age": 35,
+	"photo": "image.jpg",
+	"department": "CSE",
+	"research_areas": ["machine learning", "artificial intelligence", "iot"],
+	"past_experiance": ["forsk", "lecturer at jecrc university", {
+		"workshop organised": ["iot", "machine learning"]
+	}],
+	"hostel_opted": true,
+	"contact_details": {
+		"mobile": "8673635499",
+		"landline": "0625536628",
+		"email": "deepak@gmail.com"
+	}
+},
+
+{   "first_name": "rajat",
+	"last_name": "bharadwaj",
+	"sex": "male",
+	"age": 37,
+	"photo": "image.jpg",
+	"department": "CSE",
+	"research_areas": ["machine learning", "artificial intelligence", "iot"],
+	"past_experiance": ["forsk", "lecturer at jecrc university", {
+		"workshop organised": ["iot", "machine learning"]
+	}],
+	"hostel_opted": false,
+	"contact_details": {
+		"mobile": "8673635499",
+		"landline": "0625536628",
+		"email": "rajat@gmail.com"
+	}
+}]
+
+ 
+ 
+ 
