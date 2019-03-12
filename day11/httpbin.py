@@ -6,10 +6,18 @@ Created on Wed Mar  6 18:59:19 2019
 """
 import json
 import requests
-dict1 = {"firstname":"chris","language":"english"}
-headers = {"Content-Type":"application/json","Content-Length":len(dict1),"data":json.dumps(dict1)}
-post = requests.post("http://httpbin.org/post",dict1,headers)
-response = requests.get("http://httpbin.org/get?firstname=chris&language=english")
-#jsondata = response.json()
-#print(jsondata)
-print(response.text)
+
+host = "http://httpbin.org/post"
+data = {"firstname":"chris","language":"english"}
+headers = {"Content-Type":"application/json","Content-Length":len(data),"data":json.dumps(data)}
+
+def post_method(host,data,headers):
+    post = requests.post(host,data,headers)
+    return post
+
+def get_method():
+    response = requests.get("http://httpbin.org/get?firstname=chris&language=english")
+    return response.text
+
+post_method(host,data,headers)
+print(get_method())
